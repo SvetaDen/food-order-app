@@ -233,6 +233,17 @@ h1 {
 .text-button:active {
   color: #ffab04;
 }
+.error{
+  background-color: pink;
+  color: darkred;
+  width: 300px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.center{
+  width: 300px;
+  margin: 0 auto;
+}
 
 .modal {
   background-color: #e4ddd4;
