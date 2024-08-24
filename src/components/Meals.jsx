@@ -10,7 +10,7 @@ const Meals = () => {
         data: loadedMeals,
         isLoading,
         error
-    } = useHttp('http://localhost:3000/meals', requestConfig, []);
+    } = useHttp('https://food-order-app-lake-five.vercel.app/api/meals', requestConfig, []);
 
     if (isLoading) {
         return <p className="center">Fetching meals...</p>

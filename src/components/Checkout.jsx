@@ -20,7 +20,7 @@ const Checkout = () => {
     const userProgressCtx = useContext(UserProgressContext);
 
     const {data, isLoading: isSending, error, sendRequest,clearData} = useHttp(
-        'http://localhost:3000/orders', requestConfig);
+        'https://food-order-app-lake-five.vercel.app/api/orders', requestConfig);
 
     const cartTotal = cartCtx.items.reduce((totalPrice, item) => totalPrice + item.quantity * item.price, 0);
 
