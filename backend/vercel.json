@@ -1,4 +1,8 @@
 {
+    "rewrites": [
+        { "source": "/api/meals", "destination": "/api/meals.js" },
+        { "source": "/api/orders", "destination": "/api/orders.js" }
+    ],
     "headers": [
         {
             "source": "/api/(.*)",
@@ -19,4 +23,3 @@
         }
     ]
 }
-
