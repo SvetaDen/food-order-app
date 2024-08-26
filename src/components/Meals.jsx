@@ -1,7 +1,6 @@
 import MealItem from "./MealItem.jsx";
 import useHttp from "../hooks/useHttp.js";
 import Error from "./Error.jsx";
-import {API_BASE_URL} from "../util/config.js";
 
 
 const requestConfig ={};
@@ -11,7 +10,7 @@ const Meals = () => {
         data: loadedMeals,
         isLoading,
         error
-    } = useHttp(`${API_BASE_URL}/meals`, requestConfig, []);
+    } = useHttp('http://localhost:3000/meals', requestConfig, []);
 
     if (isLoading) {
         return <p className="center">Fetching meals...</p>
