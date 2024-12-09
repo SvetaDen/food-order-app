@@ -41,7 +41,7 @@ app.get('/meals', async (req, res) => {
         res.json(meals);
     } catch (e) {
         console.error("Error fetching meals:", e);
-        res.status(500).json({ message: "Failed to fetch meals" });
+        res.status(500).json({ message: "Internal Server Error" });
     }
 });
 
@@ -77,7 +77,6 @@ app.use((req, res) => {
     res.status(404).json({ message: 'Not found' });
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT,()=>{
-    console.log(`Server running on port ${PORT}`)
+app.listen(3000, () => {
+    console.log(`Server running on port`)
 });

@@ -18,7 +18,6 @@ export default function useHttp(url, config, initialData) {
     function clearData(){
         setData(initialData)
     }
-
     const sendRequest = useCallback(
         async function sendRequest(data) {
         setIsLoading(true);
